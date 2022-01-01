@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Block Game</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<audio id="clip1">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+	</audio>
+	
+<audio id="clip2">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+	</audio>
+	
+<audio id="clip3">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+	</audio>
+	
+<audio id="clip4">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+	</audio>
+</head>
+
+<body>
+<header>
+	<section class="holder">
+		<div class="title">ARCA</div>
+		<div class="info">
+			
+			<div id="panelDiv">
+				<img src="html assets/panel no light.svg" alt="panelOut"  id="panel"/>
+			</div>
+			<a href="how_to.html" class="instrcutions">HOW TO PLAY</a>
+			<a href="index.html" class="reset">RESET</a>
+			<h2 id="textLevel">LEVEL</h2>
+		  	<h2 id="owner">By Carlos Burbano</h2>
+			<h3 id="strictText">strict </h3>
+			<h3 id="powerText">POWEr </h3>
+			<div id="level"></div>
+			
+			<button class="button bn632-hover bn23" id="start">START</button>
+			<div class="stricyCheckBox">
+				<input type="checkbox" class="toggle"  name="strictToggle" id="strict">
+				<label for="strictToggle" ></label>
+			</div>
+			<div class="powerCheckBox">
+				<input type="checkbox" class="toggle" name="powerToggle" id="on">
+				<label for="powerToggle"></label>
+			</div>
+       		
+			
+		</div> 
+		
+	  <div class="container">
+		  <ul>
+			  <li data="block1" id ="one" class="block" style="position: absolute; left: 0px ;top:0px">
+			  </li>
+			  <li data="block2" id ="two" class="block" style="position: absolute; right: 0px ;top:0px" >
+			  </li>
+		  </ul>
+		  
+		  <ul>
+			  <li data="block3" id ="three" class="block" style="position: absolute; left: 0px ; top:50%">
+			  </li>
+			  <li data="block4" id ="four" class="block" style="position: absolute; right: 0px ;top:50%" >
+			  </li>
+		  </ul>
+	  </div>
+	
+	
+	</section>
+		
+		
+		
+	</header>
+	<script src="script.js"></script>
+</body>
+</html>

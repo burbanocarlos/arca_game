@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Block Game</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<audio id="clip1">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+	</audio>
+	
+<audio id="clip2">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+	</audio>
+	
+<audio id="clip3">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+	</audio>
+	
+<audio id="clip4">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+	</audio>
+</head>
+
+<body>
+	<header>
+		<div class="info">
+		  	<h1>Memory Blocks</h1>
+		  	<h2>memory Game</h2>
+		  	<h2>By Carlos Burbano</h2>
+			<h3>Level NUmber here </h3>
+			<div id="level"></div>
+			<button class="button" id="start">Start</button>
+       		<input type="checkbox" class="toggle" id="strict">
+			strict 
+			<input type="checkbox" class="toggle" id="on">
+			power
+		</div> 
+		
+	  <div class="container">
+		  <ul>
+			  <li data="block1" id ="one" class="block" style="position: absolute; left: 15px ;top:15px">
+			  </li>
+			  <li data="block2" id ="two" class="block" style="position: absolute; right: 15px ;top:15px" >
+			  </li>
+		  </ul>
+		  
+		  <ul>
+			  <li data="block3" id ="three" class="block" style="position: absolute; left: 15px ;top:205px">
+			  </li>
+			  <li data="block4" id ="four" class="block" style="position: absolute; right: 15px ;top:205px" >
+			  </li>
+		  </ul>
+	  </div>
+		
+		
+	</header>
+	<script src="script.js"></script>
+</body>
+</html>

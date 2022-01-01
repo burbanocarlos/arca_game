@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	
+	width: 100%;
+	height: auto;
+	font-family:myFont;
+	background: #000000
+	
+}
+@font-face{
+	font-family: myFont;
+	src: url("../portafolio wesite /werbsite assets /fonts/Exan-Regular.ttf")
+}
+header{
+	width: auto;
+	height: auto;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+}
+
+.holder{
+	position: relative;
+	display: flex;
+	width: auto;
+	height: auto;
+	max-height: 1000px;
+	max-width: 1000px;
+	background: #1D0862;
+	margin: auto;
+
+	
+}
+
+.info{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 20%;
+    position: relative;
+    flex: 1;
+   
+/*	background-position: left 0;*/
+/*
+	width: 70%;
+	height: 100%;
+	min-height: 100%;
+*/
+	
+}
+
+.container{
+    flex: 1;
+    position: relative;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 30%;
+    left: -15%;/*    margin-right: 20%;*//*    margin-left: 1%;*//*
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 400px;
+    min-height: 400px;
+*//*	margin-right: 50px;*/
+}
+.block{
+    width: 48%;
+	height: 45%;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    background: #E8E8E8;
+    opacity: 0.8;
+	transform: scale(1);
+	
+}
+
+/*
+.block:after{
+	 content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+*/
+.innerBlock{
+	background: #E8E8E8;
+	width: auto;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	
+	border-radius: 10px;
+	box-shadow:0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+	
+}
+
+#one{
+    border-radius: 15px;
+    background: #A625D3;
+}
+
+#two{
+	border-radius: 15px;
+	background: #11E8CF;
+	
+}
+#three{
+	border-radius: 15px;
+	background: #DF8F0F;
+}
+#four{
+	border-radius: 15px;
+	background: #0052D6;
+}
+
+
+.zoom:active{
+	transform: scale(.97);
+	transition: transform .2s;
+	
+}
+
+.mouse:hover{
+	color: aliceblue;
+	box-shadow: 0 0 15px aliceblue;
+  	text-shadow: 0 0 5px #ffee10;
+	opacity: 1;
+}
+
+.innerShadow1{
+	-moz-box-shadow:    inset 0 0 60px rgba(166,213,255,0.76);
+   -webkit-box-shadow: 	inset 0 0 20px #DBDBDC;
+   box-shadow:         	inset 0 0 50px rgba(240,248,255,0.74)
+	   					inset 0 0 30px rgba(94,94,132,0.76)
+	   					inset 0 0 0 10px #5D5D5D
+						inset 0 0 0 10px #272626;
+	
+/*	box-shadow: 0 0 15px aliceblue;*/
+  	text-shadow: 0 0 5px #ffee10;
+	color: aliceblue;
+	opacity: 1;
+}
+
+#level{
+    position: absolute;
+    color: aqua;
+    top: 14%;
+    left: 31%;
+    text-align: center;
+	font-size: clamp(1rem, 3vw, 1.6rem);
+	
+}
+.panelOff{
+	width: 70%;
+	height: 100%;
+	min-height: 100%;
+
+}
+
+#panel{
+	width: 70%;
+	height: 100%;
+	min-height: 100%;
+	
+}
+
+.panelOn{
+	width: 71.4%;
+	height: 100%;
+	min-height: 100%;
+	content: url("html assets/panel with liight.svg");
+	
+}
+#on {
+
+	position: absolute;
+	top:40%;
+	left:30%;
+	height: 5%;
+	width: 15%;
+	z-index: 2;
+	display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+    outline: 0;
+}
+
+.powerCheckBox input +label{
+	background: url("assests/off buttom.svg") no-repeat;
+	height: 10%;
+	width: 15%;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	top:40%;
+	left:26%;
+}
+
+.powerCheckBox input[type="checkbox"]:checked + label{
+	background: url("assests/on buttom.svg") no-repeat;
+
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+}
+.stricyCheckBox input[type="checkbox"]{
+	position: absolute;
+	top:58%;
+	left:26%;
+	height: 5%;
+	width: 15%;
+	z-index: 2;
+	display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+    outline: 0;
+	
+}
+
+
+.stricyCheckBox input +label{
+	background: url("assests/off buttom.svg")no-repeat;
+	height: 10%;
+	width: 15%;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	top:58%;
+	left:26%
+}
+
+.stricyCheckBox input[type="checkbox"]:checked + label{
+	background: url("assests/on buttom.svg")no-repeat;
+	height: 10%;
+	width: 15%;
+	z-index: 1;
+	cursor: pointer;
+	position: absolute;
+	top:58%;
+	left:26%
+}
+
+#start{
+	
+	
+}
+
+#strictText{
+	position: absolute;
+	top:48%;
+	left:23%;
+	color: #73D74B;
+	font-size: clamp(0.1rem, 3vw, 1.6rem);
+}
+
+#powerText{
+	position: absolute;
+	top:30%;
+	left:23%;
+	color: #73D74B;
+	font-size: clamp(0.1rem, 3vw, 1.6rem);
+	
+}
+
+#owner{
+	position: absolute;
+	top:88%;
+	left:29%;
+	color: #E8E8E8;
+/*	font-size: 1.1vw;*/
+	font-size: clamp(0.1rem, 0.9vw, 0.8rem); 
+	
+}
+
+.title{
+    position: absolute;
+    /*	font-size: 125px;*/
+    font-size: clamp(4rem, 10vw,9rem);
+/*    right: 27%;*/
+	left: 49%;
+    top: 10%;
+    color: #6695F6;
+    text-align: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.instrcutions{
+	position: absolute;
+	top: 13.4%;
+	right: 50%;
+    left: 41%;
+    text-align: center;
+	text-decoration: none;
+	color: #E8E8E8;
+	font-size: clamp(0.1rem, 0.65vw, 0.65rem);
+}
+.instrcutions:hover{
+	color: aqua;
+}
+
+.reset{
+	position: absolute;
+	top: 17%;
+    left: 42%;
+    text-align: center;
+	text-decoration: none;
+	color: #E8E8E8;
+	font-size: clamp(0.1rem, 0.65vw, 0.65rem);
+	
+}
+
+.reset:hover{
+	color: aqua;
+}
+
+#textLevel{
+	position: absolute;
+	top: 13%;
+    left: 20%;
+    text-align: center;
+	text-decoration: none;
+	color: aqua;
+	font-size: clamp(0.1rem, 0.8vw, 0.8rem);
+}
+
+
+
+.button{
+	font-family:myFont;
+	position: absolute;
+	top:75%;
+	left:25%;
+  	width: 17%;
+  	font-size: clamp(0.1rem, 3vw, 1rem);
+	
+}
+/*****************************************************************************************
+
+buttom by =>
+
+			Creator: https://codepen.io/JavaScriptJunkie/pen/pPRooV
+
+
+******************************************************************************************/
+
+
+.bn632-hover {
+	
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+/*  margin-left: 1%;*/
+  height: 5%;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn23 {
+    background-image: linear-gradient(
+      to right,
+      #009245,
+      #fcee21,
+      #00a8c5,
+      #d9e021
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+
+/*****************************************************************************************
+
+					HOW TO.HTML.    
+						|
+						V
+******************************************************************************************/
+
+.goDown{
+	margin-top: 10%;
+}
+.theInstructions{
+	position: relative;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 5%;
+	
+	width: auto;
+	height: 60vh;
+	color: #E8E8E8;
+	text-align:justify-all;
+/*	text-align: center;*/
+	align-content: center;
+}
+
+#rights{
+	position: absolute;
+	top:  80%;
+	left: 40%;
+}
+
+#sentence1{
+    /*	position: absolute;*/
+    
+    margin-top: 9%;
+}
+
+#sentece2{
+    /*	position: absolute;*/
+    margin-top: 5%;
+}
+
+#sentece3
+{
+	margin-top: 5%;
+}
+
+#sentece4
+{
+	margin-top: 5%;
+}
+
+.goBack{
+	font-family:myFont;
+	position: absolute;
+	top:70%;
+	left:35%;
+  	width: 17%;
+  	font-size: clamp(0.1rem, 3vw, 1rem);
+	
+}
